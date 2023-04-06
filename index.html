@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- FONT LINK -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BOOTSTRAP LINK -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="css/bandstyle.css" />
+
+    <!-- ICON IMAGE  -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../Band/img/bandicon.jpeg"
+    />
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Band</title>
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <!-- NAV BAR  -->
+      <nav>
+        <a href="band_index.html">HOME</a>
+        <a class="lgview" href="#band">BAND</a>
+        <a class="lgview" href="#tour">TOUR</a>
+        <a class="lgview" href="#contact">CONTACT</a>
+        <!-- THE MORE DROPDOWN  -->
+        <div class="more">
+          <a class="dropdowntabs lgview"
+            >MORE<i class="fa fa-caret-down"></i
+          ></a>
+          <!-- "MORE" DROPDOWN ITEMS -->
+          <div class="dropdownitems">
+            <a href="#">Merchandise</a>
+            <a href="#">Extras</a>
+            <a href="#">Media</a>
+          </div>
+        </div>
+
+        <!-- SEARCH ICON  -->
+        <div class="search lgview">
+          <a href="#"
+            ><i class="fa fa-search search-icon" style="font-size: 16px"></i
+          ></a>
+        </div>
+
+        <!-- HAMBURGER MENU  -->
+        <div class="hamburger">
+          <div id="menu">
+            <div class="menubar"></div>
+            <div class="menubar"></div>
+            <div class="menubar"></div>
+          </div>
+          <!-- DROPDOWN CONTENT  -->
+          <div class="dropdown-content">
+            <a href="#band">BAND</a>
+            <a href="#tour">TOUR</a>
+            <a href="#contact">CONTACT</a>
+            <a href="#merch">MERCH</a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- BOOTSTRAP IMAGE CAROUSEL  -->
+      <div class="herocarousel">
+        <!-- Carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <!-- The slideshow/carousel -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/la.jpg"
+                alt="Los Angeles"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/chicago.jpg"
+                alt="Chicago"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/ny.jpg"
+                alt="New York"
+                class="d-block"
+                style="width: 100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- THE BAND SECTION  -->
+    <section id="band">
+      <h2>THE BAND</h2>
+      <p><i>We love music</i></p>
+      <p class="justified-para">
+        We have created a fictional band website. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <!-- BAND MEMBERS CARD  -->
+      <div class="bandmem">
+        <div class="pics">
+          <p>Name</p>
+          <img src="img/bandmember.jpg" alt="Band Member pics" />
+        </div>
+        <div class="pics">
+          <p>Name</p>
+          <img src="img/bandmember.jpg" alt="Band Member pics" />
+        </div>
+        <div class="pics">
+          <p>Name</p>
+          <img src="img/bandmember.jpg" alt="Band Member pics" />
+        </div>
+      </div>
+    </section>
+
+    <!-- TOUR SECTION  -->
+    <section id="tour">
+      <div class="sectioncontent">
+        <h2>TOUR DATES</h2>
+        <p><i>Remeber to book your tickets!</i></p>
+        <ul>
+          <li>September <span class="soldout">Sold out</span></li>
+          <li>October <span class="soldout">Sold out</span></li>
+          <li>November <span class="avail">3</span></li>
+        </ul>
+
+        <!-- TICKETS  SECTION-->
+        <div class="buy-tickets">
+          <div class="cards">
+            <img src="img/newyork.jpg" alt="New york" />
+            <p><b>New York</b></p>
+            <p class="grey">Fri 10 Mar 2023</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button>Buy Tickets</button>
+          </div>
+
+          <div class="cards middle">
+            <img src="img/paris.jpg" alt="Paris" />
+            <p><b>Paris</b></p>
+            <p class="grey">Sat 18 Mar 2023</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button>Buy Tickets</button>
+          </div>
+
+          <div class="cards">
+            <img src="img/sanfran.jpg" alt="Sanfran" />
+            <p><b>San Francisco</b></p>
+            <p class="grey">Fri 27 Nov 2023</p>
+            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+            <button>Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION  -->
+    <section id="contact">
+      <div class="sectioncontent">
+        <h2>CONTACT</h2>
+        <p><i>Fan?Drop a note!</i></p>
+        <div class="contactdetails">
+          <i class="fa fa-map-marker contact-icon"></i> Lagos, NG <br />
+          <i class="fa fa-phone contact-icon"></i> Phone: +234812345678 <br />
+          <i class="fa fa-envelope contact-icon"></i> Email: Email@email.com
+          <br />
+        </div>
+
+        <!-- SEND FORM  -->
+        <form action=".action_page.php" target="_blank">
+          <div class="contactinput">
+            <div class="confid name">
+              <input type="text" placeholder="Name" />
+            </div>
+            <div class="confid email">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <input
+              type="textarea"
+              name="message"
+              id="message"
+              placeholder="Message"
+              class="message"
+            /><br />
+            <button class="send">SEND</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- MAP/LOCTION IMAGE  -->
+    <div class="map">
+      <img src="img/map.jpg" alt="map" />
+    </div>
+
+    <!-- FOOTER  -->
+    <footer>
+      <i class="fa fa-facebook-official" style="font-size: 24px"></i>
+      <i class="fa fa-instagram" style="font-size: 24px"></i>
+      <i class="fa fa-snapchat" style="font-size: 24px"></i>
+      <i class="fa fa-pinterest-p" style="font-size: 24px"></i>
+      <i class="fa fa-twitter" style="font-size: 24px"></i>
+      <i class="fa fa-linkedin" style="font-size: 24px"></i>
+      <p>Powered by AD</p>
+    </footer>
+  </body>
+</html>

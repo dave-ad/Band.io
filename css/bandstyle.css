@@ -1,0 +1,446 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Fraunces", serif;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  /* position: fixed;
+  top: 0; */
+  z-index: 4;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  height: 47px;
+  display: block;
+}
+
+nav a {
+  float: left;
+  text-align: center;
+  justify-content: center;
+  padding: 13px 25px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.lgview {
+  display: none;
+}
+
+/* THE MORE DROPDOWN  */
+
+.more {
+  float: left;
+  overflow: hidden;
+}
+
+/* .dropdown .dropdowntabs {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+} */
+
+/* "MORE" DROPDOWN ITEMS */
+.dropdownitems {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdownitems a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdownitems a:hover {
+  background-color: #ddd;
+}
+
+.dropdownitems {
+  display: none;
+}
+
+/* SEARCH ICON  */
+.search {
+  float: right;
+  overflow: hidden;
+  height: 54.5px;
+}
+
+.search:hover {
+  height: auto;
+  /* border: 3px solid red; */
+  background-color: white;
+  color: blue;
+  padding: 0;
+}
+
+/* HAMMBURGER MENU  */
+/* Create a right-aligned (split) link inside the navigation bar */
+.hamburger {
+  float: right;
+  overflow: hidden;
+  height: 47px;
+}
+
+#menu {
+  cursor: pointer;
+  padding: 16px 25px;
+  height: auto;
+}
+
+/* THREE STRIPS FOR THE DROPDOWN */
+.menubar {
+  width: 15px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 2px 0;
+}
+
+/* .menubar:hover {
+  background-color: #000;
+} */
+
+#menu:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#menu div:hover {
+  color: #000;
+}
+
+.dropdown-content {
+  z-index: 4;
+  cursor: pointer;
+  color: #ffffff;
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  width: 100%;
+  left: 0;
+}
+
+.dropdown-content a {
+  width: 100%;
+  float: none;
+  display: block;
+  text-align: left;
+  z-index: 2;
+}
+
+.hamburger:hover .dropdown-content {
+  display: block;
+}
+
+/* SECTION  */
+section {
+  text-align: center;
+  justify-content: center;
+  padding: 80px 17px;
+  position: relative;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  color: #6e6e6e;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+section li {
+  text-align: left;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.justified-para {
+  text-align: justify;
+}
+
+p i {
+  color: #b6b2b2;
+}
+
+/* BAND MEMBERS CARD  */
+.bandmem {
+  padding-top: 50px;
+}
+
+.bandmem img {
+  width: 60%;
+  padding-bottom: 50px;
+}
+
+/* TOUR STYLE  */
+#tour {
+  color: #ffffff;
+  background-color: #000;
+}
+
+#tour span {
+  color: white;
+  padding: 3px 7px;
+}
+
+.soldout {
+  background-color: rgb(247, 73, 73);
+}
+
+.avail {
+  float: right;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+/* TICKETS CARDS  */
+.buy-tickets {
+  width: 100%;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.cards {
+  margin-bottom: 17px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.cards img {
+  width: 100%;
+  opacity: 1;
+}
+
+.cards img:hover {
+  opacity: 0.5;
+}
+
+.cards p {
+  margin: 15px;
+}
+
+.grey {
+  color: #6e6e6e;
+}
+
+.cards button {
+  border: none;
+  width: 110px;
+  padding: 8px 11px;
+  color: #ffffff;
+  background-color: #000000;
+  /* border: 1px solid green; */
+  margin: 15px;
+}
+
+/* CONTACT SECTION */
+.contactdetails {
+  text-align: left;
+}
+
+.contact-icon {
+  width: 30px;
+  font-size: 20px;
+  color: #000;
+}
+
+/* CONTACT FORM  */
+.contactinput {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.contactinput input {
+  padding: 10px 10px;
+  border: 1px solid #d3d2d2;
+  width: 100%;
+}
+
+.message {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+/* SEND BUTTON  */
+.send {
+  border: none;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 8px 16px;
+  float: right;
+}
+
+/* MAP/LOCATION IMAGE  */
+.map {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.map img {
+  width: 100%;
+}
+
+/* footer */
+footer {
+  color: #9a9a9a;
+  padding: 70px 0;
+  text-align: center;
+}
+
+footer i {
+  /* font-size: 24px; */
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets view */
+  /* NAVIGATION BAR  */
+
+  /* TABS FOR NAV BAR  */
+  .lgview {
+    display: block;
+  }
+  /* THE "MORE" DROPDOWN */
+  /* "MORE" DROPDOWN ITEMS  */
+  .more:hover .dropdownitems {
+    margin-top: 47px;
+    display: block;
+  }
+
+  /* HAMBURGER MENU  */
+  .hamburger {
+    display: none;
+  }
+
+  /* THE BAND SECTION */
+  #band {
+    margin: auto;
+  }
+
+  /* BAND MEMBERS CARD  */
+  .bandmem {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 25px;
+  }
+
+  .pics img {
+    border-radius: 5px;
+    padding: 0;
+  }
+
+  /* TOUR SECTION  */
+  .sctioncontent {
+    width: 98%;
+    margin: auto;
+  }
+
+  /* TICKETS SECTION */
+  .buy-tickets {
+    width: 100%;
+    margin-top: 40px;
+    /* text-align: center; */
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .cards {
+    width: 31.5%;
+    margin: 0;
+    color: #000000;
+  }
+
+  .middle {
+    margin: 0 20px;
+  }
+
+  /* CONTACT SECTION */
+  .contactdetails {
+    text-align: left;
+    width: 50%;
+    float: left;
+  }
+
+  /* SEND FORM  */
+  form {
+    float: left;
+    width: 50%;
+  }
+
+  /* CLEAR SECTION FLOAT  */
+  .sectioncontent::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .contactinput {
+    text-align: left;
+    margin-top: 0;
+  }
+
+  .contactinput input {
+    padding: 10px 10px;
+    border: 1px solid #d3d2d2;
+    width: 100%;
+  }
+
+  /* NAME INPUT  */
+  .name {
+    padding-right: 15px;
+    width: 50%;
+    float: left;
+  }
+
+  /* EMAIL INPUT  */
+  .email {
+    width: 50%;
+    float: left;
+  }
+  /* MESSAGE INPUT  */
+  .message {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 815px) {
+  /* For desktop: */
+
+  #band {
+    width: 60%;
+    margin: auto;
+  }
+
+  .sectioncontent {
+    width: 60%;
+    margin: auto;
+  }
+}
